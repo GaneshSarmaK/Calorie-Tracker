@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="15dp"
+    android:paddingTop="70dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <Button
+        android:id="@+id/barButton"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="90dp"
+        android:hint="Bar Graph" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="200dp"
+        android:inputType="text"
+        android:clickable="true"
+        android:id="@+id/date2"
+        android:hint="To Date  "
+        android:gravity="center"/>
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:inputType="text"
+        android:clickable="true"
+        android:id="@+id/date1"
+        android:hint="From Date"
+        android:gravity="center"/>
+    
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/barChart"
+        android:layout_height="400dp"
+        android:layout_marginTop="100dp"
+        android:layout_width="match_parent" />
+
+    <Button
+        android:id="@+id/pieButton"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="590dp"
+        android:hint="Pie Chart" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginLeft="100dp"
+        android:inputType="text"
+        android:clickable="true"
+        android:id="@+id/pieDate"
+        android:hint=" Press here to enter Date"
+        android:gravity="center"/>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart"
+        android:layout_height="400dp"
+        android:layout_marginTop="700dp"
+        android:layout_width="match_parent" />
+
+</RelativeLayout>
+</ScrollView>
